@@ -4,7 +4,7 @@
 
 This is the documentation repository for the dbn-tools project
 
-- Visit the site [HERE](https://jd-apprentice.github.io/dbn-tools-docs/)
+- Visit the site [HERE](https://dbn-tools.jonathan.com.ar/)
 
 - You can find the repository [HERE](https://github.com/jd-apprentice/dbn-tools)
 
