@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>DBN Tools</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">DBN Tools</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">💾 Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="ABOUT/" class="nav-link">❓About the team</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="CONTRIBUTING/" class="nav-link">🤝 Contribute</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="INSTALL/" class="nav-link">💡 Installation</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="TROUBLESHOT/" class="nav-link">🌠 Troubleshot</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="ABOUT/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#home" class="nav-link">💾 Home</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#with-dbn-tools-you-can" class="nav-link">💻 With dbn-tools, you can:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-download-the-app" class="nav-link">💾 Can I download the app?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#want-to-see-our-metrics" class="nav-link">🌡 Want to see our metrics?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ideas" class="nav-link">💡 Ideas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compatibility" class="nav-link">💾 Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#flags" class="nav-link">🏳️ Flags</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#application" class="nav-link">📁 Application</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#folder-structure" class="nav-link">📁 Folder structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dependencies" class="nav-link">📁 Dependencies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#python-dependencies" class="nav-link">🐍 Python dependencies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#troubleshot" class="nav-link">🐛 Troubleshot</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#environment-variables" class="nav-link">🌴 Environment variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install" class="nav-link">📁 Install</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#license" class="nav-link">📝 License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contributing" class="nav-link">🤝 Contributing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contributors" class="nav-link">✨ Contributors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="home">💾 Home</h1>
+<p><a href="https://app.codacy.com/gh/jd-apprentice/dbn-tools/dashboard?utm_source=gh&amp;utm_medium=referral&amp;utm_content=&amp;utm_campaign=Badge_grade"><img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Grade/2780bebe8e2c4ec3abcc784b3d8f29c6" /></a></p>
+<h2 id="with-dbn-tools-you-can">💻 With dbn-tools, you can:</h2>
+<ul>
+<li>🔍 Analyze disk usage and see which files and directories are taking up the most space.</li>
+<li>🗑️ Delete temporary files and free up space on your hard drive.</li>
+<li>💾 Check the usage of your system's RAM and swap memory.</li>
+<li>🧰 Get detailed information about your CPU and system.</li>
+<li>🗑️ Empty the recycle bin to permanently delete files.</li>
+<li>🌧️ Check weather for you current location.</li>
+<li>🧹 Uninstall programs you no longer need.</li>
+<li>💵 Check local rate for USD-ARS.</li>
+<li>🔍 Search for a specific file.</li>
+<li>🍎 Download youtube videos.</li>
+<li>🕰️ Check the system uptime.</li>
+<li>🔒 Check open ports.</li>
+</ul>
+<p><img alt="image" src="readme.png" /></p>
+<h2 id="can-i-download-the-app">💾 Can I download the app?</h2>
+<ul>
+<li>Yes! releases are being published -&gt; <a href="https://github.com/jd-apprentice/dbn-tools/releases">HERE</a></li>
+<li>Check compatibility for your distro or look at the <a href="INSTALL/">INSTALL</a> for detailed instructions</li>
+</ul>
+<h2 id="want-to-see-our-metrics">🌡 Want to see our metrics?</h2>
+<p>We use codacy here is the <a href="https://app.codacy.com/gh/jd-apprentice/dbn-tools/dashboard">DASHBOARD</a></p>
+<h2 id="ideas">💡 Ideas</h2>
+<ul>
+<li>New ideas are being tracked and added in this issue -&gt; <a href="https://github.com/jd-apprentice/dbn-tools/issues/5">Here</a></li>
+</ul>
+<h2 id="compatibility">💾 Compatibility</h2>
+<ul>
+<li>Docker ✅</li>
+<li>Ubuntu 22.04 ✅</li>
+<li>Debian 11 ✅</li>
+<li>Arch ✅</li>
+<li>Fedora ❌</li>
+<li>Centos ❌</li>
+<li>Gentoo ❌</li>
+<li>openSUSE ❌</li>
+<li>Slackware ❌</li>
+</ul>
+<h2 id="flags">🏳️ Flags</h2>
+<ul>
+<li><code>--help</code>: 📜 Display a help message with a list of all available options.</li>
+<li><code>--system</code>: 🖥 Filters the menu to only show system utility options.</li>
+<li><code>--esp</code>: 🇪🇸 Enable Spanish translation (WIP).</li>
+</ul>
+<h2 id="application">📁 Application</h2>
+<p><img alt="APP" src="https://cdn.discordapp.com/attachments/875262629516546089/1071869885250011197/image.png" /></p>
+<h2 id="folder-structure">📁 Folder structure</h2>
+<pre><code>📦dbn-tools
+ ┣ 📂.github
+ ┃ ┗ 📂workflows
+ ┃ ┃ ┗ 📜codacy.yml
+ ┣ 📂DEBIAN
+ ┃ ┣ 📜control
+ ┣ 📂usr
+ ┃ ┗ 📂bin
+ ┃ ┃ ┣ 📂constants
+ ┃ ┃ ┃ ┣ 📜ascii.sh
+ ┃ ┃ ┣ 📂functions
+ ┃ ┃ ┃ ┣ 📜delete-temp.sh
+ ┃ ┃ ┗ 📜dbn-tools.sh
+ ┣ 📂utils
+ ┃ ┣ 📜build_new_version.sh
+ ┣ 📜.gitignore
+ ┣ 📜CONTRIBUTE.md
+ ┣ 📜Dockerfile
+ ┣ 📜INSTALL.md
+ ┣ 📜LICENSE
+ ┣ 📜README.md
+ ┗ 📜readme.png
+</code></pre>
+<h2 id="dependencies">📁 Dependencies</h2>
+<ul>
+<li>Bash</li>
+<li>Git</li>
+<li>Debtap (Arch)</li>
+<li>Python 3</li>
+</ul>
+<h2 id="python-dependencies">🐍 Python dependencies</h2>
+<ul>
+<li>Requests</li>
+</ul>
+<h2 id="troubleshot">🐛 Troubleshot</h2>
+<p>For more information, check the <a href="TROUBLESHOT/">TROUBLESHOT</a> file</p>
+<h2 id="environment-variables">🌴 Environment variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DOWNLOAD_URL</code></td>
+<td>URL to download a package get it from here -&gt; https://github.com/jd-apprentice/dbn-tools/tags</td>
+</tr>
+<tr>
+<td><code>PACKAGE_NAME</code></td>
+<td>Name of the package being downloaded (is the name of the file from the other variable)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="install">📁 Install</h2>
+<p>You can see how to install it in the following file <a href="INSTALL/">INSTALL</a>.</p>
+<h2 id="license">📝 License</h2>
+<p>This project is under the MIT license. See the <a href="./LICENSE">LICENSE</a> for more information.</p>
+<h2 id="contributing">🤝 Contributing</h2>
+<p>For more information, check the <a href="CONTRIBUTING/">CONTRIBUTING</a> file</p>
+<h2 id="contributors">✨ Contributors</h2>
+<p>Thanks goes to these wonderful people (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>):</p>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://jonathan.com.ar/es"><img src="https://avatars.githubusercontent.com/u/68082746?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan Dyallo</b></sub></a><br /><a href="#!" title="Code">💻</a> <a href="#!" title="Tests">⚠️</a> <a href="#!" title="Documentation">📖</a> <a href="#maintenance-jd-apprentice" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+<p>This project follows the <a href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification. Contributions of any kind welcome!</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.4.2
+Build Date UTC : 2023-03-18 04:04:41.606630+00:00
+-->
