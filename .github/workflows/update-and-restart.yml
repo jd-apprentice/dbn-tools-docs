@@ -16,4 +16,4 @@ jobs:
 
       - name: SSH into server and pull
         run: |
-          ssh -i "${{ secrets.SSH_PRIVATE_KEY }}" ${{ vars.USER }}@${{ secrets.HOST }} "cd projects/dbn-tools-dcs && git pull origin main && pm2 restart dbn-tools-docs"
+          ssh -i "${{ secrets.SSH_PRIVATE_KEY }}" ${{ secrets.USER }}@${{ secrets.HOST }} "cd projects/dbn-tools-dcs && git pull origin main && pm2 restart dbn-tools-docs"
