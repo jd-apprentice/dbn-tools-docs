@@ -1,5 +1,7 @@
 # 💡 Installation
 
+[Releases](https://github.com/jd-apprentice/dbn-tools/releases) are being published in github
+
 ## 🐋 Docker
 
 - Clone the repository and make sure to be in the same folder as the `Dockerfile` which is in the root

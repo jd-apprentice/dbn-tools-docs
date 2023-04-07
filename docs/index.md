@@ -1,6 +1,4 @@
-# 💾 DBN-TOOLS
-
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2780bebe8e2c4ec3abcc784b3d8f29c6)](https://app.codacy.com/gh/jd-apprentice/dbn-tools/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+# 🏠 Home
 
 ## 💻 With dbn-tools, you can:
 
