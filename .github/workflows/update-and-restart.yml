@@ -13,6 +13,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
+          node-version: 16
 
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
@@ -27,5 +28,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd projects/dbn-tools-docs/
-            git pull origin master
+            git pull origin main
             pm2 restart dbn-tools-docs
