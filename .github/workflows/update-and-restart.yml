@@ -15,11 +15,5 @@ jobs:
           fetch-depth: 0
 
       - name: SSH into server and pull
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            cd projects/dbn-tools-dcs
-            git pull origin main
+        run: |
+          ssh -i "${{ secrets.SSH_PRIVATE_KEY }}" ${{ secrets.USER }}@${{ secrets.HOST }} "cd projects/dbn-tools-dcs && git pull origin main && pm2 restart dbn-tools-docs"
