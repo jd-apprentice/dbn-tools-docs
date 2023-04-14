@@ -4,5 +4,5 @@
 *.md linguist-generated=false
 *.md linguist-documentation=false
 *.md linguist-detectable=true
-README.md linguist-detectable=false
-readme.md linguist-detectable=false
+README.md linguist-detectable=true
+readme.md linguist-detectable=true
