@@ -41,6 +41,7 @@ We use codacy here is the [DASHBOARD](https://app.codacy.com/gh/jd-apprentice/db
 - Gentoo ❌
 - openSUSE ❌
 - Slackware ❌
+- AppImage ❌
 
 ## 🏳️ Flags
 
