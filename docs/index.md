@@ -11,6 +11,7 @@
 - 🧹 Uninstall programs you no longer need.
 - 💵 Check local rate for USD-ARS.
 - 🔍 Search for a specific file.
+- 🤖 Ask Chat GPT-3 a question.
 - 🍎 Download youtube videos.
 - 🕰️ Check the system uptime.
 - 🔒 Check open ports.
