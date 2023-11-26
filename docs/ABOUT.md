@@ -4,9 +4,9 @@
 
 ![Team Member Name](https://avatars.githubusercontent.com/u/68082746?v=4)
 
-**Role:** Software Developer
+**Role:** SysOps - DevOps - DevSecOps
 
-**Bio:** I'm a software developer from Argentina who enjoys backend development and working with the Linux environment.
+**Bio:** I'm a SysOps Engineer with a passion for DevOps and DevSecOps.
 
 ![Linkedin](https://img.shields.io/badge/-Linkedin-0077B5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jonathandyallo/)
 ![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/jd_apprentice)
